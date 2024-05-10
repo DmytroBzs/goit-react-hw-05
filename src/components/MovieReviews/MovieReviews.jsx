@@ -1,9 +1,10 @@
-import css from "./MovieReviews.module.css";
+
 import { getMovieReviews } from "../../movies-api";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Loader/Loader";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
+import css from "./MovieReviews.module.css";
 
 const MovieReviews = () => {
   const { movieId } = useParams();

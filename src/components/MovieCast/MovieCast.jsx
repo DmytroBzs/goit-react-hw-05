@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { getMovieCredits } from "../../movies-api";
-import css from "./MovieCast.module.css";
 import { useParams } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
+import css from "./MovieCast.module.css";
 
 const MovieCast = () => {
   const { movieId } = useParams();
@@ -30,7 +30,7 @@ const MovieCast = () => {
   }, [movieId]);
 
   const defaultImg =
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fanimal%2Fcat&psig=AOvVaw267Nu1BO5beclweAMrulGs&ust=1715342885410000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjwmK3EgIYDFQAAAAAdAAAAABAE";
+    "https://unsplash.com/photos/selective-focus-photography-of-orange-and-white-cat-on-brown-table-75715CVEJhI";
 
   return (
     <div className={css.wrap}>
